@@ -1,0 +1,11 @@
+<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.2" cx="45.5" cy="45.5" r="45.5" fill="#EB5B25"/>
+<ellipse cx="30" cy="30" rx="30" ry="30" transform="translate(16 16)" fill="#EB5B25"/>
+<circle cx="11.9706" cy="11.9706" r="10.9706" transform="translate(34 34)" stroke="white" stroke-width="2"/>
+<circle cx="17" cy="17" r="16" transform="translate(29 28.9995)" stroke="white" stroke-width="2"/>
+<circle cx="22" cy="22" r="21" transform="translate(25.7559 22.731) rotate(4.07845)" stroke="white" stroke-width="2"/>
+<path d="M16.7703 13.1746L2.74594 0L-3.31522e-05 15.96L4.83445 34.4766L17.535 20.2927L16.7703 13.1746Z" transform="translate(18.0771 37.6001) rotate(-14.5644)" fill="#EB5B25"/>
+<path d="M0 -1C-0.552285 -1 -1 -0.552285 -1 0C-1 0.552285 -0.552285 1 0 1V-1ZM13.7071 0.707107C14.0976 0.316583 14.0976 -0.316583 13.7071 -0.707107L7.34315 -7.07107C6.95262 -7.46159 6.31946 -7.46159 5.92893 -7.07107C5.53841 -6.68054 5.53841 -6.04738 5.92893 -5.65685L11.5858 0L5.92893 5.65685C5.53841 6.04738 5.53841 6.68054 5.92893 7.07107C6.31946 7.46159 6.95262 7.46159 7.34315 7.07107L13.7071 0.707107ZM0 1H13V-1H0V1Z" transform="translate(25.3159 53.3853) rotate(-14.5644)" fill="white"/>
+<circle cx="5" cy="5" r="4" transform="translate(44 36) rotate(30)" stroke="white" stroke-width="2"/>
+<path d="M0 8C0 8 0.500044 0 6.00002 0C11.5 0 12 8 12 8" transform="translate(40 47)" stroke="white" stroke-width="2"/>
+</svg>
