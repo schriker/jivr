@@ -110,15 +110,33 @@ h3 {
 }
 
 .btn-arrow {
+    position: relative;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
+    margin-right: 25px;
+}
+
+.btn-arrow img {
+    transform: translate(0, -50%);
+    top: 50%;
+    right: -25px;
+    position: absolute;
+    transition: all ease 0.2s;
 }
 
 .btn-arrow-blck {
     color: #292A2E;
+}
+
+.btn-arrow:hover {
+    color: #EB5B25;
+}
+
+.btn-arrow:hover img {
+    right: -30px;
 }
 
 .logo {
@@ -501,7 +519,7 @@ h3 {
     margin: 0;
 }
 
-.viewer {
+.viewer .img {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -512,18 +530,27 @@ h3 {
     background-position: 0 50%;
 }
   
-.viewer.frame1 {
+.viewer.frame1 .img{
 background-position: -600px 50%;
 }
 
-.viewer.frame2 {
+.viewer.frame2 .img{
 background-position: -1200px 50%;
 }
 
-.viewer.frame3 {
+.viewer.frame3 .img{
 background-position: -1800px 50%;
 }
 
-.viewer.frame4 {
+.viewer.frame4 .img{
 background-position: -2400px 50%;
+}
+
+.second-content {
+    opacity: 0;
+    transition: all ease 0.2s;
+}
+
+.viewer.frame2 .second-content {
+    opacity: 1;
 }
