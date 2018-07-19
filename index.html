@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/morphext.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -51,8 +54,8 @@
                         <div class="col-6 offset-1">
                             <div class="f-left">
                                 <p class="medium-text">The best</p>
-                                <h2><span>electric</span> bike.</h2>
-                                <a class="f-right btn-arrow" href="#">Buy now <img src="img/right-arrow.svg" alt="Arrow"></a>
+                                <h2><span class="js-rotating">electric, chainless, folding, smart</span> bike.</h2>
+                                <a class="btn btn-orange f-right" href="#">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -82,25 +85,34 @@
                     <img class="img-fluid" src="img/logos/the-verge.png" alt="">
                 </div>
                 <div class="row flex-nowrap">
-                    <div class="col-4">
-                        <div class="media-reviews review">
-                            <p>“The JIVR | Bike is an excellent piece of kit — it worked flawlessly and serves to fulfill a genuine demand.”</p>
-                            <span>VENTUREBIKE</span>
+                    <div class="owl-carousel owl-carousel-media-reviews">
+                        <div>
+                            <div class="media-reviews review">
+                                <p>“The JIVR | Bike is an excellent piece of kit — it worked flawlessly and serves to fulfill a genuine demand.”</p>
+                                <span>VENTUREBIKE</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="media-reviews review">
-                            <p>“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
-                            <span>GIZMODO</span>
+                        <div>
+                            <div class="media-reviews review">
+                                <p>“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                                <span>GIZMODO</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="media-reviews review">
-                            <p>“Cycling fans searching for a 21st- century bike should look no further than JIVR.”</p>
-                            <span>BGR</span>
+                        <div>
+                            <div class="media-reviews review">
+                                <p>“Cycling fans searching for a 21st- century bike should look no further than JIVR.”</p>
+                                <span>BGR</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="media-reviews review">
+                                <p>“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                                <span>GIZMODO</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="row dots-container dots-media-reviews"></div>
             </div>
         </div>
         <div class="container-fluid">
@@ -111,11 +123,33 @@
                     <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
                 </div>
             </div>
+            <div class="row">
+                <img class="img-fluid" src="img/video-placeholder.jpg" alt="">
+            </div>
+        </div>
+        <div id="sticky" class=" white-bg">
+            <div class="container-fluid bike-animation-wrapper">
+                <div class="col-3 text-right align-self-start">
+                    <p class="medium-orange">Chainless</p>
+                    <h3>Power up <br /> and go far</h3>
+                    <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                    <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                </div>
+                <div class="col-6 align-self-center">
+                    <div class="viewer"></div>
+                </div>
+                <div class="col-3 align-self-end">
+                    <p class="medium-orange">Electric</p>
+                    <h3>Power up <br /> and go far</h3>
+                    <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                    <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                </div>
+            </div>
         </div>
         <div class="container-fluid position-relative">
             <div class="position-absolute absolute-center height-100">
                 <div class="container position-absolute absolute-center height-100 hero-wrapper">
-                   <div class="row height-100 align-items-center">
+                   <div class="row height-100 hero-img-2">
                         <div class="col-3">
                             <span class="medium-orange">Smart</span>
                             <h3>A smarter way to commute</h3>
@@ -164,35 +198,47 @@
                 </div>
             </div>
             <div class="row flex-nowrap">
-                <div class="col-4">
-                    <div class="user-review review">
-                        <ul class="customer-rating">
-                            <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
-                        </ul>
-                        <p class="small-grey">“The JIVR | Bike is an excellent piece of kit — it worked flawlessly and serves to fulfill a genuine demand.”</p>
-                        <span>LUCY SKIVER</span>
+                <div class="owl-carousel owl-carousel-user-reviews">
+                    <div>
+                        <div class="user-review review">
+                            <ul class="customer-rating">
+                                <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
+                            </ul>
+                            <p class="small-grey">“The JIVR | Bike is an excellent piece of kit — it worked flawlessly and serves to fulfill a genuine demand.”</p>
+                            <span>LUCY SKIVER</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="user-review review">
-                        <ul class="customer-rating">
-                            <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
-                        </ul>
-                        <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
-                        <span>TONY SOPRANO</span>
+                    <div>
+                        <div class="user-review review">
+                            <ul class="customer-rating">
+                                <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
+                            </ul>
+                            <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                            <span>TONY SOPRANO</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="user-review review">
-                        <ul class="customer-rating">
-                            <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
-                        </ul>
-                        <p class="small-grey">“Cycling fans searching for a 21st- century bike should look no further than JIVR.”</p>
-                        <span>BRAD PITT</span>
+                    <div>
+                        <div class="user-review review">
+                            <ul class="customer-rating">
+                                <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
+                            </ul>
+                            <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                            <span>TONY SOPRANO</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="user-review review">
+                            <ul class="customer-rating">
+                                <li></li><li></li><li></li><li class="blank"></li><li class="blank"></li>
+                            </ul>
+                            <p class="small-grey">“Cycling fans searching for a 21st- century bike should look no further than JIVR.”</p>
+                            <span>BRAD PITT</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row customer-review-header justify-content-center">
+            <div class="row dots-container dots-user-reviews"></div>
+            <div class="row read-more-btn justify-content-center">
                 <div class="col text-center">
                     <a class="btn-arrow btn-arrow-blck" href="#">READ MORE REVIEWS <img src="img/orange-arrow.svg" alt="Arrow"></a>
                 </div>
@@ -289,6 +335,11 @@
                 </div>
             </div>
         </div>
-        <script src="" async defer></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/morphext.min.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/main.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     </body>
 </html>

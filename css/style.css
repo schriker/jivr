@@ -1,3 +1,12 @@
+html,
+body {
+  height:100%;
+}
+
+body {
+  width:100%;
+}
+
 body {
     background-color: #FAFAFA;
     font-family: 'Roboto', sans-serif;
@@ -29,6 +38,11 @@ img {
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.white-bg {
+    background: #fff;
+    height: 100%;
 }
 
 .medium-text {
@@ -67,6 +81,10 @@ h3 {
 
 .text-center {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .f-right {
@@ -281,6 +299,24 @@ h3 {
     background-position: 90% 10%;
 }
 
+.bike-animation-wrapper {
+    height: 100%;
+    display: flex;
+    padding: 180px 150px;
+}
+
+.bike-animation-wrapper h3 {
+    margin: 0;
+}
+
+.bike-animation-wrapper p {
+    margin: 25px 0; 
+}
+
+.hero-img-2 {
+    margin-top: 300px;
+}
+
 .user-review {
     background-color: #fff;
 }
@@ -350,6 +386,10 @@ h3 {
     color: #74787D;
 }
 
+.read-more-btn {
+    margin:40px 0 100px 0;
+}
+
 .footer-wrapper {
     background-color: #292A2E;
 }
@@ -404,4 +444,86 @@ h3 {
     font-size: 11px;
     line-height: 17px;
     margin-right: 20px;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+  }
+
+.owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.dots-container {
+    justify-content: flex-end;
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+.dots-media-reviews .owl-dot span {
+    background-color: #fff;
+}
+
+.dots-user-reviews .owl-dot span {
+    background-color: #292A2E;
+}
+
+.owl-dot {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+
+.owl-dot span {
+    display: block;
+    width: 20px;
+    height: 1px;
+    margin-left: 15px;
+    opacity: 0.4;
+    transition: all ease 0.2s;
+}
+
+.owl-dot:hover span {
+    cursor: pointer;
+    height: 2px;
+    opacity: 1;
+}
+
+.owl-dot.active span {
+    height: 2px;
+    opacity: 1;
+}
+
+.owl-dot:last-child {
+    margin: 0;
+}
+
+.viewer {
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+    background-image: url('../img/sprite.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+  
+.viewer.frame1 {
+background-position: -600px 50%;
+}
+
+.viewer.frame2 {
+background-position: -1200px 50%;
+}
+
+.viewer.frame3 {
+background-position: -1800px 50%;
+}
+
+.viewer.frame4 {
+background-position: -2400px 50%;
 }
