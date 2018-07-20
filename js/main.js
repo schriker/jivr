@@ -1,5 +1,14 @@
 $(function(){
 
+    $(".video-wrapper").hide();
+
+    $(".video-cover-btn").on("click", function(){
+        $(".video-cover").hide();
+        $(".video-wrapper").show();
+        var video = document.getElementById("home-page-video");
+        video.play();
+    });
+
     $(".owl-carousel-media-reviews").owlCarousel({
         loop: false,
         autoplay: true,
