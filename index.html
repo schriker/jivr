@@ -78,14 +78,16 @@
         </div>
         <div class="container-fluid media-reviews-wrapper">
             <div class="container">
-                <div class="row flex-nowrap media-logos align-items-center justify-content-between">
-                    <img class="img-fluid" src="img/logos/forbes.png" alt="Forbes">
-                    <img class="img-fluid" src="img/logos/mit-technology.png" alt="MIT">
-                    <img class="img-fluid" src="img/logos/techchrunch.png" alt="Tech Chrunch">
-                    <img class="img-fluid" src="img/logos/netflix.png" alt="Netflix">
-                    <img class="img-fluid" src="img/logos/venturebeat.png" alt="Venture Beat">
-                    <img class="img-fluid" src="img/logos/engadget.png" alt="Engadget">
-                    <img class="img-fluid" src="img/logos/bbc.png" alt="BBC">
+                <div class="media-logos">
+                    <ul class="align-items-center justify-content-between">
+                        <li><img class="img-fluid" src="img/logos/mit-technology.png" alt="MIT"></li>
+                        <li><img class="img-fluid" src="img/logos/forbes.png" alt="Forbes"></li>
+                        <li><img class="img-fluid" src="img/logos/techchrunch.png" alt="Tech Chrunch"></li>
+                        <li><img class="img-fluid" src="img/logos/netflix.png" alt="Netflix"></li>
+                        <li><img class="img-fluid" src="img/logos/venturebeat.png" alt="Venture Beat"></li>
+                        <li><img class="img-fluid" src="img/logos/engadget.png" alt="Engadget"></li>
+                        <li><img class="img-fluid" src="img/logos/bbc.png" alt="BBC"></li>
+                    </ul>
                 </div>
                 <div class="row flex-nowrap">
                     <div class="owl-carousel owl-carousel-media-reviews">
@@ -120,7 +122,7 @@
         </div>
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-3 text-center section-title">
+                <div class="col-10 col-md-5 col-lg-4 col-xl-3 text-center section-title">
                     <p class="small-orange">Folding</p>
                     <h3>Unfold in seconds.</h3>
                     <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
@@ -128,9 +130,7 @@
             </div>
         </div>
         <div class="container-fluid position-relative">
-            <div class="row video-wrapper">
-                <video id="home-page-video" controls muted src="/video/jivr_rozkladanie_homepage.mp4"></video>
-            </div>
+            <video class="video-wrapper" id="home-page-video" controls muted src="/video/jivr_rozkladanie_homepage.mp4"></video>
             <div class="video-cover">
                 <div class="video-cover-btn">
                     <img src="img/play-btn.svg" alt="Play Button">Play video
@@ -140,27 +140,30 @@
         </div>
         <div id="sticky" class=" white-bg">
             <div class="container-fluid bike-animation-wrapper">
-                <div class="viewer col-9">
-                    <div class="row height-100">
-                        <div class="col-4 text-right align-self-start">
-                            <div class="second-content">
-                                <p class="medium-orange">Chainless</p>
+                <div class="row">
+                        <div class="viewer col-9">
+                                <div class="row height-100">
+                                    <div class="col-4 text-right align-self-start">
+                                        <div class="second-content">
+                                            <p class="medium-orange">Chainless</p>
+                                            <h3>Power up <br /> and go far</h3>
+                                            <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                                            <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 align-self-center">
+                                        <div class="img"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 align-self-end">
+                                <p class="medium-orange">Electric</p>
                                 <h3>Power up <br /> and go far</h3>
                                 <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
                                 <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
                             </div>
-                        </div>
-                        <div class="col-8 align-self-center">
-                            <div class="img"></div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-3 align-self-end">
-                    <p class="medium-orange">Electric</p>
-                    <h3>Power up <br /> and go far</h3>
-                    <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
-                    <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
-                </div>
+
             </div>
         </div>
         <div class="container-fluid position-relative">
@@ -209,7 +212,7 @@
                 </div>
             </div>
             <div class="row customer-review-header justify-content-center">
-                <div class="col-8 text-center">
+                <div class="col-11 col-md-11 col-lg-8 text-center">
                     <span class="medium-orange">Customer Reviews</span>
                     <h3>“These bikes have a host of <span>anti-theft technologies</span>”</h3>
                 </div>

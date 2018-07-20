@@ -16,13 +16,13 @@ $(function(){
         dotsContainer: '.dots-media-reviews',
         responsive : {
             0 : {
-                items: 3
+                items: 1
             },
             480 : {
-                items: 3
+                items: 1
             },
             768 : {
-                items: 3
+                items: 2
             },
             991 : {
                 items: 3
@@ -37,13 +37,13 @@ $(function(){
         dotsContainer: '.dots-user-reviews',
         responsive : {
             0 : {
-                items: 3
+                items: 1
             },
             480 : {
-                items: 3
+                items: 1
             },
             768 : {
-                items: 3
+                items: 2
             },
             991 : {
                 items: 3
