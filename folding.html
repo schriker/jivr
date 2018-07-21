@@ -18,10 +18,26 @@
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/fullpage.css">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            .section0 {
+                background-image: url('img/folding/folding-img-1.jpg');
+            }
+            .section1 {
+                background-image: url('img/folding/folding-img-2.jpg');
+            }
+            @media (max-width: 768px) {
+                .section0 {
+                    background-image: url('img/folding/folding-img-m-1.jpg');
+                }
+                .section1 {
+                    background-image: url('img/folding/folding-img-m-2.jpg');
+                }
+            }
+        </style>
     </head>
     <body>
-        <div id="fullpage">
-            <div class="section" style="background-image: url('img/folding/folding-img-1.jpg')" id="section0">
+        <div id="folding">
+            <div class="section section0" id="section0">
                 <div class="container-fluid position-relative height-100">
                     <div class="position-absolute absolute-center height-100">
                         <div class="logo">
@@ -110,13 +126,13 @@
                     </div>
                 </div>
             </div>
-            <div class="section" id="section5" style="background-image: url('img/folding/folding-img-2.jpg')">
+            <div class="section section1" id="section1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-5 col-lg-4 col-xl-lg-3">
+                        <div class="col-md-6 col-lg-4 col-xl-lg-3">
                             <span class="medium-orange">Mobile</span>
                             <h3>Perfect for mixed commutes</h3>
-                            <p class="small-grey">JIVR makes it easy to go from two wheels to public transport and back again.</p>
+                            <p class="small-grey hide-mobile">JIVR makes it easy to go from two wheels to public transport and back again.</p>
                         </div>
                     </div>
                     <div class="row">
@@ -134,8 +150,24 @@
                         </div>
                     </div>
                 </div>
+                <div class="container hide-desktop features-icons-mobile">
+                    <div class="row">
+                        <div class="features-icons d-flex flex-column text-center align-items-center">
+                            <img src="img/folding/mobile/folds-in-10-seconds.svg" alt="">
+                            <span class="small-orange">Folds in 10 <br> seconds</span>
+                        </div>
+                        <div class="features-icons d-flex flex-column text-center align-items-center">
+                            <img src="img/folding/mobile/4-ergonomic-moves.svg" alt="">
+                            <span class="small-orange">4 ergonomic <br> moves</span>
+                        </div>
+                        <div class="features-icons d-flex flex-column text-center align-items-center">
+                            <img src="img/folding/mobile/mobile-while-folded.svg" alt="">
+                            <span class="small-orange">Mobile while <br> folded</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="section fp-auto-height" id="section5">
+            <div class="section fp-auto-height" id="section2">
                 <div class="container-fluid footer-wrapper">
                     <div class="container">
                         <div class="media-logos">
@@ -265,6 +297,7 @@
         <script src="js/morphext.min.js"></script>
         <script src="js/owl.carousel.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/scrolloverflow.min.js"></script>
         <script src="js/fullpage.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>

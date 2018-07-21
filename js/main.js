@@ -166,9 +166,10 @@ $(function(){
 
     }
 
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['home', 'mobile'],
+    var myFullpage = new fullpage('#folding', {
+        anchors: ['home', 'mobile', 'footer'],
         navigation: true,
         navigationPosition: 'right',
+        scrollOverflow: true
     });
 });
