@@ -890,6 +890,7 @@ background-position: -2400px 50%;
 
 @media (min-width: 1300px) {
     .info-icons-wrapper {
-        padding: 0 200px;
+        width: 1140px;
+        margin: 90px auto 0 auto;
     }
 }
