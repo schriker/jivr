@@ -165,4 +165,10 @@ $(function(){
                 .addTo(controller);
 
     }
+
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['home', 'mobile'],
+        navigation: true,
+        navigationPosition: 'right',
+    });
 });
