@@ -26,9 +26,35 @@
                         <img src="img/jivr_logo.svg" alt="JIVR">
                     </a>
                 </div>
-                <div class="container position-absolute absolute-center height-100 hero-wrapper">
+                <div class="mobile-menu">
+                        <div class="hamburger-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                <div class="hide-mobile hide-desktop mobile-menu-content">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="navigation-active"><a href="#">Features<i class="fas fa-chevron-down"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Folding</a></li>
+                                    <li><a href="#">Electric</a></li>
+                                    <li><a href="#">Chainless</a></li>
+                                    <li><a href="#">Smart</a></li>
+                                    <li><a href="#">Care</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">About<i class="fas fa-chevron-down"></i></a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Locations</a></li>
+                        </ul>
+                    </nav>
+                    <p class="text-center">©2013 JAM Vehicles Limited<br>All rights reserved</p>
+                </div>
+                <div class="container position-absolute absolute-center height-100 hero-wrapper hero-wrapper-main">
                     <div class="row header align-items-center">
-                        <div class="col-7">
+                        <div class="col-7 hide-mobile">
                             <nav>
                                 <ul class="navigation">
                                     <li class="navigation-active"><a href="#">Features<i class="fas fa-chevron-down"></i></a>
@@ -46,13 +72,13 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-4 offset-1 d-flex justify-content-around">
+                        <div class="hide-mobile col-5 col-lg-5 col-xl-4 offset-xl-1 d-flex justify-content-around">
                             <a class="btn btn-black" href="#">Test Ride</a>
                             <a class="btn btn-orange" href="#">Buy Now</a>
                         </div>
                     </div>
                     <div class="row hero-content">
-                        <div class="col-6">
+                        <div class="col-xl-6 col-lg-10">
                             <div class="f-left">
                                 <p class="medium-text">The best</p>
                                 <h2><span class="js-rotating">electric, chainless, folding, smart</span> bike.</h2>
@@ -60,21 +86,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row hide-mobile">
                         <div class="col text-center mouse-scroll-icon">
                             <img src="img/mouse-scroll.svg" alt="Mouse Scroll">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero-number">
+            <div class="hero-number hide-mobile">
                 <ul>
                     <li class="hero-number--active"></li>
                     <li></li>
                     <li></li>
                 </ul>
             </div>
-            <img class="img-fluid" src="img/hero-img-1.jpg" alt="">
+            <picture>
+                    <source media="(max-width: 767px)" srcset="img/hero-img-1-mobile.jpg">
+                    <img class="img-fluid" src="img/hero-img-1.jpg" alt="">
+            </picture>
         </div>
         <div class="container-fluid media-reviews-wrapper">
             <div class="container">
@@ -83,10 +112,10 @@
                         <li><img class="img-fluid" src="img/logos/mit-technology.png" alt="MIT"></li>
                         <li><img class="img-fluid" src="img/logos/forbes.png" alt="Forbes"></li>
                         <li><img class="img-fluid" src="img/logos/techchrunch.png" alt="Tech Chrunch"></li>
-                        <li><img class="img-fluid" src="img/logos/netflix.png" alt="Netflix"></li>
-                        <li><img class="img-fluid" src="img/logos/venturebeat.png" alt="Venture Beat"></li>
-                        <li><img class="img-fluid" src="img/logos/engadget.png" alt="Engadget"></li>
-                        <li><img class="img-fluid" src="img/logos/bbc.png" alt="BBC"></li>
+                        <li class="hide-mobile"><img class="img-fluid" src="img/logos/netflix.png" alt="Netflix"></li>
+                        <li class="hide-mobile"><img class="img-fluid" src="img/logos/venturebeat.png" alt="Venture Beat"></li>
+                        <li class="hide-mobile"><img class="img-fluid" src="img/logos/engadget.png" alt="Engadget"></li>
+                        <li class="hide-mobile"><img class="img-fluid" src="img/logos/bbc.png" alt="BBC"></li>
                     </ul>
                 </div>
                 <div class="row flex-nowrap">
@@ -138,39 +167,62 @@
                 <img class="img-fluid" src="img/video-thumbnail.jpg" alt="Video">
             </div>
         </div>
-        <div id="sticky" class=" white-bg">
+        <div id="sticky" class="white-bg hide-mobile">
             <div class="container-fluid bike-animation-wrapper">
                 <div class="row">
-                        <div class="viewer col-9">
-                                <div class="row height-100">
-                                    <div class="col-4 text-right align-self-start">
-                                        <div class="second-content">
-                                            <p class="medium-orange">Chainless</p>
-                                            <h3>Power up <br /> and go far</h3>
-                                            <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
-                                            <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-8 align-self-center">
-                                        <div class="img"></div>
-                                    </div>
+                    <div class="viewer col-9 medium-width-100">
+                        <div class="row height-100">
+                            <div class="medium-width-100 col-4 text-right align-self-start">
+                                <div class="second-content">
+                                    <p class="medium-orange">Chainless</p>
+                                    <h3>Power up and go far</h3>
+                                    <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                                    <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
                                 </div>
                             </div>
-                            <div class="col-3 align-self-end">
-                                <p class="medium-orange">Electric</p>
-                                <h3>Power up <br /> and go far</h3>
-                                <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
-                                <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                            <div class="medium-width-100 col-8 align-self-center">
+                                <div class="img"></div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="medium-width-100 col-3 align-self-end">
+                        <p class="medium-orange">Electric</p>
+                        <h3>Power up and go far</h3>
+                        <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                        <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                    </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="container-fluid mobile-bike show-mobile">
+            <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                    <p class="medium-orange">Chainless</p>
+                    <h3>Power up and go far</h3>
+                    <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                    <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <img class="img-fluid mobile-bike-img" src="img/bike-1.jpg" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                    <p class="medium-orange">Electric</p>
+                    <h3>Power up and go far</h3>
+                    <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric folding bike!”</p>
+                    <a class="btn-arrow btn-arrow-blck" href="#">Learn more<img src="img/orange-arrow.svg" alt="Arrow"></a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <img class="img-fluid mobile-bike-img" src="img/bike-2.jpg" alt="">
             </div>
         </div>
         <div class="container-fluid position-relative">
             <div class="position-absolute absolute-center height-100">
                 <div class="container position-absolute absolute-center height-100 hero-wrapper">
-                   <div class="row height-100 hero-img-2">
-                        <div class="col-3">
+                   <div class="row height-100 align-items-center">
+                        <div class="col-md-5 col-lg-4 col-xl-lg-3">
                             <span class="medium-orange">Smart</span>
                             <h3>A smarter way to commute</h3>
                             <p class="small-grey">“That's probably one of the most svelte and simple functional designs that I've seen for an electric”</p>
@@ -179,38 +231,45 @@
                    </div>
                 </div>
             </div>
-            <div class="hero-number">
+            <div class="hero-number hide-mobile">
                 <ul>
                     <li></li>
                     <li class="hero-number--active"></li>
                     <li></li>
                 </ul>
             </div>
-            <img class="img-fluid" src="img/hero-img-2.jpg" alt="Hero Img 2">
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/hero-img-2-mobile.jpg">
+                <img class="img-fluid" src="img/hero-img-2.jpg" alt="Hero Img 2">
+            </picture>
         </div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row info-icons-wrapper">
-                <div class="col text-center info-icons">
-                    <img src="img/icons/patent.svg" alt=""><span class="small-orange">Patented technology</span>
-                    <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="owl-carousel owl-carousel-features">
+                        <div class="text-center info-icons">
+                            <img src="img/icons/patent.svg" alt=""><span class="small-orange">Patented technology</span>
+                            <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="text-center info-icons">
+                            <img src="img/icons/handmade.svg" alt=""><span class="small-orange">Handmade in European Union</span>
+                            <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="text-center info-icons">
+                            <img src="img/icons/warranty.svg" alt=""><span class="small-orange">2 year <br/> warranty</span>
+                            <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="text-center info-icons">
+                            <img src="img/icons/free-trials.svg" alt=""><span class="small-orange">14 day <br/> risk-free trial</span>
+                            <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="text-center info-icons">
+                            <img src="img/icons/individual.svg" alt=""><span class="small-orange">Individual approach</span>
+                            <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col text-center info-icons">
-                    <img src="img/icons/handmade.svg" alt=""><span class="small-orange">Handmade in European Union</span>
-                    <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col text-center info-icons">
-                    <img src="img/icons/warranty.svg" alt=""><span class="small-orange">2 year <br/> warranty</span>
-                    <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col text-center info-icons">
-                    <img src="img/icons/free-trials.svg" alt=""><span class="small-orange">14 day <br/> risk-free trial</span>
-                    <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="col text-center info-icons">
-                    <img src="img/icons/individual.svg" alt=""><span class="small-orange">Individual approach</span>
-                    <p class="small-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
+        </div>  
+        <div class="container">
             <div class="row customer-review-header justify-content-center">
                 <div class="col-11 col-md-11 col-lg-8 text-center">
                     <span class="medium-orange">Customer Reviews</span>
@@ -268,7 +327,7 @@
             <div class="position-absolute absolute-center height-100">
                 <div class="container position-absolute absolute-center height-100 hero-wrapper">
                     <div class="row height-100 align-items-center justify-content-end">
-                        <div class="col-5">
+                        <div class="col-12 col-md-7 col-lg-5">
                             <span class="medium-orange">Try it today</span>
                             <h3>Book your production slot today for just a deposit of just €99!</h3>
                             <a class="btn btn-orange f-left" href="#">Buy Now</a>
@@ -276,30 +335,34 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-number">
+            <div class="hero-number hide-mobile">
                 <ul>
                     <li></li>
                     <li></li>
                     <li class="hero-number--active"></li>
                 </ul>
             </div>
-            <img class="img-fluid" src="img/hero-img-3.jpg" alt="Hero Img 2">
+            <picture>
+                    <source media="(max-width: 767px)" srcset="img/hero-img-3-mobile.jpg">
+                    <img class="img-fluid" src="img/hero-img-3.jpg" alt="">
+            </picture>
         </div>
         <div class="container-fluid footer-wrapper">
             <div class="container">
-                <div class="row flex-nowrap comapnies-logos align-items-center justify-content-around">
-                    <img class="img-fluid" src="img/companies/visa.svg" alt="Visa">
-                    <img class="img-fluid" src="img/companies/mastercard.svg" alt="Mastercard">
-                    <img class="img-fluid" src="img/companies/discover.svg" alt="Discover">
-                    <img class="img-fluid" src="img/companies/american-express.svg" alt="American Express">
-                    <img class="img-fluid" src="img/companies/paypal.svg" alt="PayPal">
+                <div class="media-logos">
+                    <ul class="align-items-center justify-content-around">
+                        <li><img class="img-fluid" src="img/companies/visa.svg" alt="MIT"></li>
+                        <li><img class="img-fluid" src="img/companies/mastercard.svg" alt="Forbes"></li>
+                        <li><img class="img-fluid" src="img/companies/sofort.png" alt="Tech Chrunch"></li>
+                        <li><img class="img-fluid" src="img/companies/klarna.png" alt="Netflix"></li>
+                    </ul>
                 </div>
-                <div class="row">
-                    <div class="col-3">
+                <div class="row justify-b-mobile footer-wrapper-content hide-mobile">
+                    <div class="col-md-6 col-lg-4">
                         <img class="footer-logo" src="img/jivr_logo.svg" alt="JIVR">
                         <p>JAM Vehicles Limited New Broad Street House 35 New Broad Street London, England, EC2M 1NH</p>
                     </div>
-                    <div class="col-2 offset-1">
+                    <div class="col-md-3 col-lg-2">
                         <h4>Sitemap</h4>
                         <ul>
                             <li><a href="#">Home</a></li>
@@ -312,9 +375,9 @@
                             <li><a href="#">Buy now</a></li>
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-6">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="row justify-b-mobile">
+                            <div class="col-lg-7 col-md-5">
                                 <h4>Contact Information</h4>
                                 <ul>
                                     <li>ask@jivr.co</li>
@@ -323,7 +386,7 @@
                                     <li>DE +49 322 2109 9027</li>
                                 </ul>
                             </div>
-                            <div class="col-4 offset-2">
+                            <div class="col-lg-5 col-md-3">
                                 <h4>Social Media</h4>
                                 <ul>
                                     <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
@@ -332,8 +395,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row justify-b-mobile">
+                            <div class="col-lg-7 col-md-5">
                                 <h4>Terms & Conditions</h4>
                                 <ul>
                                     <li><a href="#">Return & Refunds</a></li>
@@ -343,7 +406,7 @@
                                     <li><a href="#">User Manual</a></li>
                                 </ul>
                             </div>
-                            <div class="col-4 offset-2">
+                            <div class="col-lg-5 col-md-3">
                                 <h4>Press & Media</h4>
                                 <ul>
                                     <li>pr@jivr.co</li>
@@ -351,6 +414,58 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row mobile-footer show-mobile hide-desktop footer-wrapper-content">
+                    <div class="col-12 text-center">
+                        <img class="footer-logo" src="img/jivr_logo.svg" alt="JIVR">
+                    </div>
+                    <div class="col-12">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Test Ride</a></li>
+                            <li><a href="#">Buy now</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h4>Contact Information</h4>
+                        <ul>
+                            <li>ask@jivr.co</li>
+                            <li>UK +44 20 3808 9120</li>
+                            <li>NL +31 85 888 1520</li>
+                            <li>DE +49 322 2109 9027</li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h4>Terms & Conditions</h4>
+                        <ul>
+                            <li><a href="#">Return & Refunds</a></li>
+                            <li><a href="#">Cancellation policy</a></li>
+                            <li><a href="#">Delivery policy</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">User Manual</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h4>Press & Media</h4>
+                        <ul>
+                            <li>pr@jivr.co</li>
+                            <li>Press kit</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center mobile-socials">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                        <p>JAM Vehicles Limited New Broad Street House 35 New Broad Street London, England, EC2M 1NH</p>
                     </div>
                 </div>
             </div>

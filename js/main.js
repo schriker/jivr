@@ -1,5 +1,10 @@
 $(function(){
 
+    $(".hamburger-btn").on("click", function(){
+        $(".mobile-menu-content").toggleClass("show");
+        $(this).toggleClass("hamburger-btn-open");
+    });
+
     $(".video-wrapper").hide();
 
     $(".video-cover-btn").on("click", function(){
@@ -26,6 +31,52 @@ $(function(){
             },
             991 : {
                 items: 3
+            }
+        }
+    });
+
+    $(".owl-carousel-features").owlCarousel({
+        loop: false,
+        autoplay: true,
+        autoHeight: false,
+        responsive : {
+            320 : {
+                loop: true,
+                items: 1,
+                stagePadding: 75
+            },
+            375 : {
+                loop: true,
+                items: 1,
+                stagePadding: 90
+            },
+            425 : {
+                loop: true,
+                items: 1,
+                stagePadding: 100
+            },
+            500 : {
+                loop: true,
+                items: 2,
+                stagePadding: 90
+            },            
+            650 : {
+                loop: true,
+                items: 3,
+                stagePadding: 70
+            },
+            750 : {
+                loop: true,
+                items: 3,
+                stagePadding: 80
+            },
+            850 : {
+                loop: true,
+                items: 3,
+                stagePadding: 90
+            },
+            950 : {
+                items: 5
             }
         }
     });
