@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.2" cx="30" cy="30" r="30" fill="#EB5B25"/>
+<ellipse cx="19.7802" cy="19.7802" rx="19.7802" ry="19.7802" transform="translate(10.5493 10.5495)" fill="#EB5B25"/>
+<line x1="1" y1="-1" x2="6.38462" y2="-1" transform="translate(21 31.2329) rotate(90)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1" y1="-1" x2="9.15385" y2="-1" transform="translate(26 28.4636) rotate(90)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1" y1="-1" x2="6.38462" y2="-1" transform="translate(31 31.2329) rotate(90)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1" y1="-1" x2="10" y2="-1" transform="translate(36 27.6174) rotate(90)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0 10.8192L4.13817 5.9329L9.69366 7.50192L16.2235 3.50165e-05" transform="translate(24.0791 19) rotate(11.0787)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M6.97913e-06 -6.06348e-05L0 4.51499H4.49669" transform="translate(40.5415 25.8691) rotate(-177.488)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

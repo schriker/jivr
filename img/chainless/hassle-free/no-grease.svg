@@ -1,0 +1,10 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.2" cx="30" cy="30" r="30" fill="#EB5B25"/>
+<ellipse cx="19.7802" cy="19.7802" rx="19.7802" ry="19.7802" transform="translate(10 11)" fill="#EB5B25"/>
+<path d="M0 10.0637V0.99091C0 0.825225 0.134315 0.69091 0.3 0.69091H13.14C13.3057 0.69091 13.44 0.825225 13.44 0.99091V3.01736C13.44 3.228 13.6514 3.37305 13.8479 3.29728L21.2802 0.431723C21.5717 0.31937 21.8194 0.671585 21.6151 0.907845L13.5297 10.2599C13.4728 10.3258 13.3899 10.3637 13.3028 10.3637H0.3C0.134315 10.3637 0 10.2293 0 10.0637Z" transform="translate(21.6001 26.6362)" stroke="white" stroke-width="2"/>
+<line x1="1" y1="-1" x2="32.2415" y2="-1" transform="translate(16 20) rotate(43.7811)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M3 3.77419C3 4.55449 2.45436 5 2 5C1.54564 5 1 4.55449 1 3.77419C1 3.55744 1.04603 3.3586 1.12335 3.18743L1.95459 1.83862L2.88456 3.2053C2.9571 3.37238 3 3.56494 3 3.77419Z" transform="translate(42 30)" stroke="white" stroke-width="2"/>
+<path d="M5.6 1.78513L2.70317 0.861698C1.3657 0.435349 0 1.43341 0 2.83719V2.83719C0 3.31151 0.162627 3.7715 0.460755 4.14042L5.6 10.5" transform="translate(16 26)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0 0H4" transform="translate(26 25)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M0 0H2" transform="translate(28 25) rotate(90)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>

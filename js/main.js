@@ -166,10 +166,24 @@ $(function(){
 
     }
 
-    var myFullpage = new fullpage('#folding', {
-        anchors: ['home', 'mobile', 'footer'],
-        navigation: true,
-        navigationPosition: 'right',
-        scrollOverflow: true
-    });
+    var width = $(document).width();
+
+    if (width >= 768) {
+        var myFullpage = new fullpage('#folding', {
+            anchors: ['slide-0', 'slide-1', 'slide-2', 'slide-3', 'slide-4'],
+            navigation: true,
+            navigationPosition: 'right',
+            scrollOverflow: true,
+            responsiveWidth: 767
+        });
+    }
+    else if(width < 768) {
+        var myFullpage = new fullpage('#folding', {
+            anchors: ['slide-0', 'slide-1', 'slide-2', 'slide-3', 'slide-4'],
+            navigation: true,
+            navigationPosition: 'right',
+            scrollOverflow: false,
+            responsiveWidth: 768
+        });
+    }
 });
