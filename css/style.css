@@ -833,10 +833,12 @@ background-position: -2400px 50%;
 
 .affix .logo {
     top: 25px;
+    transition: all .2s ease;
 }
 
 .header {
     padding: 32px 0;
+    transition: all .2s ease;
 }
 
 #holder{
