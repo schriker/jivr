@@ -7,11 +7,20 @@ $(function(){
 
     $(".video-wrapper").hide();
 
-    $(".video-cover-btn").on("click", function(){
+    function playVideo(triger) {
         $(".video-cover").hide();
         $(".video-wrapper").show();
         var video = document.getElementById("home-page-video");
-        video.play();
+        if (triger === "start") {
+            video.play();
+        }
+        else {
+            video.pause();
+        }
+    }
+
+    $(".video-cover-btn").on("click", function() {
+        playVideo("start")
     });
 
     $(".owl-carousel-media-reviews").owlCarousel({
@@ -105,17 +114,40 @@ $(function(){
     $(".owl-item").addClass("col");
 
 
-    $(".js-rotating").Morphext({
-        // The [in] animation type. Refer to Animate.css for a list of available animations.
-        animation: "fadeIn",
-        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
-        separator: ",",
-        // The delay between the changing of each phrase in milliseconds.
-        speed: 3000,
-        complete: function () {
-            // Called after the entrance animation is executed.
+    var $slogans = $("h2.slogan").find("span");
+    var $holder = $("#holder");
+    
+    //set via JS so they're visible if JS disabled
+    $slogans.parent().css({position : "absolute", top:"0px", left:"0px"});
+    
+    //settings
+    var transitionTime = 0.5;
+    var slogansDelayTime = 2;
+    
+    //internal
+    var totalSlogans = $slogans.length;
+    
+    var oldSlogan = 0;
+    var currentSlogan = -1;
+    
+    //initialize	
+    switchSlogan();
+    
+    function switchSlogan(){
+        
+        oldSlogan = currentSlogan;
+        
+        if(currentSlogan < totalSlogans-1){
+            currentSlogan ++
+        } else {
+            currentSlogan = 0;
         }
-    });
+        
+        TweenLite.to($slogans.eq(oldSlogan), transitionTime, {top:-20, alpha:0, rotationX: 90});
+        TweenLite.fromTo($slogans.eq(currentSlogan), transitionTime, {top:20, alpha:0, rotationX: -90 }, {top:0, alpha:1, rotationX:0});
+        
+        TweenLite.delayedCall(slogansDelayTime, switchSlogan);
+    }
 
     // @explanation
     // define the pin once in the target scene, but
@@ -142,6 +174,18 @@ $(function(){
     reverse: true
     }
     });
+
+    new ScrollMagic.Scene({
+        triggerElement: '.video-trigger',
+    }).addTo(controller).on("enter leave", function(e){
+        if (e.type == "enter") {
+            playVideo("start");
+        }
+        if (e.type == "leave") {
+            playVideo("stop");
+        }
+    });
+    
 
     // build pinned scene
     new ScrollMagic.Scene({
@@ -174,7 +218,8 @@ $(function(){
             navigation: true,
             navigationPosition: 'right',
             scrollOverflow: true,
-            responsiveWidth: 767
+            responsiveWidth: 767,
+            licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
         });
     }
     else if(width < 768) {
@@ -183,7 +228,8 @@ $(function(){
             navigation: true,
             navigationPosition: 'right',
             scrollOverflow: false,
-            responsiveWidth: 768
+            responsiveWidth: 768,
+            licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
         });
     }
 });
