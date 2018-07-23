@@ -1,5 +1,17 @@
 $(function(){
 
+
+    window.addEventListener('scroll', function () {
+        var target = $('.absolute-menu');
+        var position = target.position();
+        var height = $(window).scrollTop();
+        if (height > position.top) {
+            $(".absolute-menu").addClass("affix");
+        } else {
+            $(".absolute-menu").removeClass("affix");
+        }
+    });
+
     $(".hamburger-btn").on("click", function(){
         $(".mobile-menu-content").toggleClass("show");
         $(this).toggleClass("hamburger-btn-open");
@@ -219,7 +231,15 @@ $(function(){
             navigationPosition: 'right',
             scrollOverflow: true,
             responsiveWidth: 767,
-            licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
+            licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+            onLeave: function(origin, destination){
+               if(destination.index > 0) {
+                    $(".absolute-menu").addClass("affix"); 
+               }
+               else if (destination.index === 0) {
+                    $(".absolute-menu").removeClass("affix");
+               }
+            }
         });
     }
     else if(width < 768) {
