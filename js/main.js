@@ -179,22 +179,30 @@ $(function(){
     frame_count  = 4,
     offset_value = 120;
 
-    // init controller
-    var controller = new ScrollMagic.Controller({
-    globalSceneOptions: {
-    triggerHook: 0,
-    reverse: true
-    }
-    });
+    var videoController = new ScrollMagic.Controller({
+        globalSceneOptions: {
+        triggerHook: 0.15,
+        reverse: true
+        }
+        });
 
     new ScrollMagic.Scene({
         triggerElement: '.video-trigger',
-    }).addTo(controller).on("enter leave", function(e){
+    }).addTo(videoController).on("enter leave", function(e){
         if (e.type == "enter") {
             playVideo("start");
         }
         if (e.type == "leave") {
             playVideo("stop");
+        }
+    });
+
+
+    // init controller
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+        triggerHook: 0,
+        reverse: true
         }
     });
     
