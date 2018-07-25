@@ -1,7 +1,6 @@
 $(function(){
 
-
-    window.addEventListener('scroll', function () {
+    window.addEventListener("scroll", function () {
         var target = $('.absolute-menu');
         var position = target.position();
         var height = $(window).scrollTop();
@@ -128,21 +127,17 @@ $(function(){
 
     var $slogans = $("h2.slogan").find("span");
     var $holder = $("#holder");
-    
-    //set via JS so they're visible if JS disabled
+
     $slogans.parent().css({position : "absolute", top:"0px", left:"0px"});
     
-    //settings
     var transitionTime = 0.5;
     var slogansDelayTime = 2;
     
-    //internal
     var totalSlogans = $slogans.length;
     
     var oldSlogan = 0;
     var currentSlogan = -1;
-    
-    //initialize	
+    	
     switchSlogan();
     
     function switchSlogan(){
@@ -161,20 +156,6 @@ $(function(){
         TweenLite.delayedCall(slogansDelayTime, switchSlogan);
     }
 
-    // @explanation
-    // define the pin once in the target scene, but
-    // don't attach animation within same scene; instead
-    // create a scene for every class and toggle them on or off
-    // depending on the offset value of the scroll.
-
-    // @info
-    // To see this pen with indicators make sure to uncomment the 
-    // lines containing .addIndicators()
-    //
-    // While this is a scroll example I've also included a CSS only
-    // version to understand how steps can work in CSS animations.
-
-    // global vars
     var viewer = document.querySelector('.viewer'),
     frame_count  = 4,
     offset_value = 120;
@@ -197,8 +178,6 @@ $(function(){
         }
     });
 
-
-    // init controller
     var controller = new ScrollMagic.Controller({
         globalSceneOptions: {
         triggerHook: 0,
@@ -206,8 +185,6 @@ $(function(){
         }
     });
     
-
-    // build pinned scene
     new ScrollMagic.Scene({
     triggerElement: '#sticky',
     duration: (frame_count * offset_value) + 'px',
@@ -217,7 +194,6 @@ $(function(){
     // .addIndicators()
     .addTo(controller);
 
-    // build step frame scene
     for (var i = 1, l = frame_count; i <= l; i++) {
 
             new ScrollMagic.Scene({
@@ -225,7 +201,6 @@ $(function(){
                 offset: i * offset_value
                 })
                 .setClassToggle(viewer, 'frame' + i)
-                // .addIndicators()
                 .addTo(controller);
 
     }
